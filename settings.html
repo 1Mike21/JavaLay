@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+	<style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap'); </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>JavaLay</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<header>
+			<div class="logo_picter">
+				<img class="picter" src="img/main/logo_java.jpg" alt="Logo">
+			</div>
+			
+			<div class="pages">
+				<nav><a href="#" style="color: #fad9ba">Android Studio</a></nav>
+				<nav><a href="interface.html">Создание интерфейса</a></nav>
+				<nav><a href="design.html">UI/UX дизайн</a></nav>
+				<nav><a href="example_program.html">Пример приложения</a></nav>
+			</div>
+			
+			<div class="icon">
+				<a class="home" href="index.html"><img src="img/main/icon-home.png" alt="Главная"></a>
+			</div>
+		</header>
+
+		
+		<div class="header"><h1>Установка Android Studio</h1></div>
+		<div class="text">
+			<p>После скачивания программы Android Studio ее необходимо установить и правильно настроить. Установка программы на Windows:</p>
+			<ol>
+				<li>Если вы загрузили <i>.exe файл</i> (рекомендуется), дважды щелкните, чтобы запустить его. Если вы загрузили <i>.zip</i> файл, распакуйте <i>ZIP</i> файл, скопируйте папку <i>android-studio</i> в папку <i>Program Files</i>, а затем откройте папку <i>android-studio>bin</i> и запустите <i>studio64.exe</i> (для 64-разрядных компьютеров) или <i>studio.exe</i> (для 32 разрядных компьютеров)</li>
+				<li>Следуйте инструкциям мастера установки в Android Studio и установите все папки SDK, которые он рекомендует.</li>
+			</ol>
+			<p>Установка программы на Mac:</p>
+			<ol>
+				<li>Запустите DMG-файл Android Studio.</li>
+				<li>Перетащите Android Studio в папку приложений, затем запустите Android Studio.</li>
+				<li>Выберите, хотите ли вы импортировать предыдущие настройки Android Studio, затем нажмите OK.</li>
+				<li>Мастер настройки Android Studio проведет вас через остальную часть настройки, которая включает загрузку компонентов Android SDK, необходимых для разработки.</li>
+			</ol>
+			<p><b>Примечание:</b> если вы используете Android Studio на macOS Mojave или более поздней версии, вы можете увидеть запрос на разрешение IDE доступа к вашему календарю, контактам или фотографиям. Это приглашение вызвано новыми механизмами защиты конфиденциальности для приложений, которые обращаются к файлам в домашнем каталоге. Итак, если ваш проект включает файлы и библиотеки в вашем домашнем каталоге, и вы видите это приглашение, вы можете выбрать. Не разрешать.</p>
+			
+			<p>Android Studio использует инструменты Java Development Kit в работе. До недавнего времени перед установкой Android Studio нужно было скачать и установить JDK с официального сайта Oracle. Сейчас такой необходимости нет, поскольку Android Studio уже содержит встроенный пакет инструментов JDK. Также стоит иметь в виду, что для работы с Android Studio на ПК должен быть установлен Java.
+			</p>
+		</div>
+		
+		
+		<div class="header"><h1>Настройка эмулятора</h1></div>
+	<div class="text">	
+		<p>Если у вас нет физического Android устройства, или же вы хотите своё приложение протестировать на конкретных устройствах с конкретной версией Android, то вам нужно будет виртуальное устройство.</p>
+		<p>Идем в AVD Manager:</p>
+			<img class="image_setting" src="img/settings/avd_manager.png" alt="AVD manager">
+		<p>Как видим, уже есть одно виртуальное устройство, и можно больше не создавать, а перейти к следующему разделу по запуску приложения. Но мы попробуем сейчас создать еще одно:</p>
+			<img class="image_setting" src="img/settings/create_device.png" alt="create device">
+		<p>Выбираем, какое устройство будем создавать. Допустим, мы хотим создать эмулятор Nexus 5:</p>
+			<img class="image_setting" src="img/settings/change_device.png" alt="change dvice">
+		<p><b>Внимание!</b> Для эмулятора нужен образ версии Android, который будет устанавливаться на эмулятор. И вам нужно будет его скачать, нажав на Download. Например, нам нужен Android 8.0:</p>
+			<img class="image_setting" src="img/settings/change_version.png" alt="change version">
+		<p>После нажатия на кнопку Download начнется скачивание образа:</p>
+			<img class="image_setting" src="img/settings/download_disk.png" alt="download disk">
+		<p>Возможно, что перед этим вас попросят согласиться с лицензией:</p>
+			<img class="image_setting" src="img/settings/license.png" alt="license">
+		<p>После этого образ Android будет доступен для выбора и можно продолжить создание виртуального устройства:</p>
+			<img class="image_setting" src="img/settings/create_virtual.png" alt="create_virtual">
+		<p>Здесь всё можно оставить по умолчанию:</p>
+			<img class="image_setting" src="img/settings/settings_emulator.png" alt="settings emulator">
+		<p>Попробуем запустить эмулятор:
+			<img class="image_setting" src="img/settings/start_emulator.png" alt="start emulator">
+		<p>Если через какое-то время у вас в эмуляторе запустился полноценный Android, то всё замечательно:</p>
+			<img class="image_setting" src="img/settings/emulator.png" alt="emulator">
+		<p>Можно пока его не закрывать, так как будем его использовать для запуска нашего приложения. Но для будущего есть рекомендация: закрывать эмулятор лучше через крестик, а не через кнопку питания, которая находится чуть ниже: практика показывает, что при отключении питания потом эмулятор может не запуститься:</p>
+			<img class="image_setting" src="img/settings/emulator_2.png" alt="emulator 2">
+	</div>
+
+	
+	<div class="header"><h1>Как запустить приложение на реальном физическом устройстве.</h1></div>
+	<div class="text">		
+		<p>Вначале включим режим Для разработчиков на телефоне. Зайдите в настройки телефона и в разделе О телефоне найдите пункт Версия MIUI. Щелкните по нему 7 раз. На скриншоте ниже мне пишут: «Не нужно, вы уже разработчик», — так как я уже нажимал 7 раз на этот пункт в прошлом:</p>
+			<img class="image_setting" src="img/settings/about_telephone.png" alt="about telephone">
+		<p>Теперь в настройках телефона уровнем выше должен появиться пункт - Для разработчиков:</p>
+			<img class="image_setting" src="img/settings/extend_settings.png" alt="extend settings">
+		<p>В нем нужно включить пункт Отладка по USB:</p>
+			<img class="image_setting" src="img/settings/for_developer.png" alt="for_developer">
+		<p>Теперь, если вы включите свой смартфон через кабель к компьютеру, то устройство должно отобразится в списке устройств. Далее необходимо разрешить подключение смартфона к компьютеру. Теперь его можно выбирать при запуске приложения на телефоне.</p>
+	</div>
+	
+	
+	<footer>
+		<div class="end">
+			<p>© 2022 JavaLay</p>
+		</div>
+	</footer>
+	
+</body>
+</html>
